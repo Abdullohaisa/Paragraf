@@ -15,6 +15,7 @@ import { useDispatch, useSelector } from "react-redux";
 import CircularProgress from '@mui/material/CircularProgress';
 import { darkLight } from "../../../Redux/darkModeSlice";
 import MenuIcon from '@mui/icons-material/Menu';
+import PersonIcon from '@mui/icons-material/Person';
 
 
 
@@ -129,20 +130,19 @@ const Navbar = ({searchModalPanel,  setBackPanel,closeCategory,   setSearchModal
             </li>
             <li>
               <div className="search-box">
-                <div className="input-wrapper">
+
                 <input
                   id={mode === false ? "dark":"light"}
                   onChange={(e) => setSearchValue(e.target.value)}
                   onClick={panels}
-                  placeholder="Mahsulotlarni qidirish"
+                  placeholder="qidirish..."
                   type="text"
                   value={searchValue}
                 />
                 <button onClick={panels}>
                  {loading?  <CircularProgress /> : <Search/>}
                 </button>
-                </div>
-                
+
                 {searchModalPanel && <SearchPanel clearInput={clearInput} closePanels={closePanels} searchData={searchData} />}
               </div>
             </li>
@@ -164,6 +164,19 @@ const Navbar = ({searchModalPanel,  setBackPanel,closeCategory,   setSearchModal
           <Link className="enter-link" to="/register/phone">
             <button  className={mode === false ? "enter dark-btn":"enter"}>Kirish</button>
           </Link>
+         
+
+          {/* res */}
+
+          <Link className="res-enters" to="/register/phone">
+            <button className={mode === false ? "res-enter dark-btn":"res-enter"} >
+              <PersonIcon/>
+          </button>
+          </Link>
+
+          {/* res */}
+
+
         </div>
       </div>
     </div>

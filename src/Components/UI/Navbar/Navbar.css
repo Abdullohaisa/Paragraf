@@ -152,11 +152,17 @@
 .search-box {
     width: 39vw;
     max-width: 581px;
-    border-radius: 8px;
+    border-radius: 10px;
     border: 2px solid rgba(255, 153, 16, 1);
     position: relative;
-     z-index: 7;
+    z-index: 7;
     background-color: white;
+    display: flex;
+    background-color:  rgba(255, 153, 16, 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2px;
 }
 .input-wrapper {
     display: flex;
@@ -182,7 +188,8 @@
 .main-navbar ul {
     display: flex;
     align-items: center;
-    gap: 12px;
+    justify-content: space-between;
+    gap: 5px;
 }
 
 .search-box input {
@@ -260,7 +267,9 @@
      box-shadow: #ffffff 0px 0px 0px 1px , black 0px 0px 0px 2px ;
 }
 
-
+.res-enters {
+    display: none;
+}
 
 
 @media only screen and (max-width: 1160px) {
@@ -302,6 +311,13 @@
    
      .res-top-navbar-btn {
         display: block;
+        align-items: center;
+        justify-content: center;
+        padding-top: 3px;
+     }
+
+     .main-navbar {
+        gap: 0px;
      }
 
      .top-navbar {
@@ -314,5 +330,57 @@
 
      .search-box {
         height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 240px;
+        width: 100%;
+        padding-left: 0px;
+        
+     }
+
+     .search-box button {
+       height: 39.1px;
+       width: 40px;
+       border-radius: 0px 8px 8px 0px ;
+       box-shadow: 0px 0px 0px .2px rgba(255, 153, 16, 1);
+     }
+
+     .search-box input {
+        width: 100%;
+        height: 100%;
+        padding: 0px 5px;
+     }
+
+     .res-enters {
+        display: block;
+        text-decoration: none;
+     }
+
+     .res-enter {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgba(255, 153, 16, 1);
+        color: rgb(255, 255, 255);
+        border: none;
+     }
+
+     .main-navbar ul {
+        max-width: 280px;
+        width: 88%;
+        gap: 0px;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 3px;
+     }
+
+     .main-navbar ul li:nth-child(1) {
+        margin-right: -12px;
+     }
+
+     .enter {
+        display: none;
      }
   }
