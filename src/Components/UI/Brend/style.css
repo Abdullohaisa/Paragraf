@@ -1,0 +1,38 @@
+.brend-box {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    margin-top: 32px;
+    gap: 24px;
+    justify-content: space-between; 
+}
+
+.brend-logo {
+    width: 170px;
+    height: 100px;
+    border-radius: 12px;
+    padding: 0px 40px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* .brend-logo img {
+
+} */
+
+.brend {
+    margin-top: 56px;
+}
+
+.brend p {
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+}

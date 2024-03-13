@@ -1,0 +1,62 @@
+.free-like {
+    width: 850px;
+    height: 422px;
+    /* background-color: white; */
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.free-like div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.free-like p {
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: center;
+ 
+}
+
+.free-like h5 {
+    max-width: 440px;
+    width: 100%;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.free-like button {
+    width: 170px;
+    height: 40px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 8px;
+    border: 1px;
+    gap: 8px;
+   font-weight: 600;
+   font-size: 15px;
+   line-height: 20px;
+   background-color: rgba(255, 255, 255, 0);
+   border: 1.5px solid rgba(255, 153, 16, 1);
+   margin-top: 40px;
+   transition: .13s;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.free-like button:active {
+    transform: scale(.8);
+}
+

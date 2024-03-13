@@ -1,0 +1,37 @@
+.card-1 {
+    width: 180px;
+    height: 222px;
+    padding: 17px, 3.5px, 12px, 3.5px;
+    border-radius: 12px;
+    background-color: white;
+    overflow: hidden;
+    color: black;
+}
+
+
+
+.card-1 img {
+    object-fit: cover;
+    height: 80%;
+    transition: .4s;
+}
+
+.card-1 img:hover {
+    transform: scale(1.1);
+}
+
+.card-1 p {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 6px;
+}
+
+/* product2 */
+
+.product2-box {
+    
+}

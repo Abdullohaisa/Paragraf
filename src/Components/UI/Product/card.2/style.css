@@ -1,0 +1,237 @@
+.card-2 {
+    width: 275px;
+    height: 370px;
+    border-radius: 12px ;
+    padding: 17px, 3.5px, 12px, 3.5px;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    transition: .3s;
+}
+
+.card-2:hover {
+    height: 420px;
+}
+
+.card-2 img {
+    object-fit: cover;
+    height: 200px;
+    transition: .4s;
+}
+
+
+.card-2 p {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+.product2-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.card-2 div  {
+    padding: 0px 0px 0px 16px;
+}
+
+.card-2-text-1 {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(126, 126, 131, 1);
+    
+}
+
+.card-2-text-2 {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(26, 32, 36, 1);
+    margin-top: 5px;
+}
+
+.card-2-text-3 {
+    margin-top: 5px;
+}
+
+.card-2-text-4 {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: fit-content;
+    height: 19px;
+    padding: 2px 8px 2px 8px;
+    border-radius: 12px;
+    background: rgba(255, 153, 16, 1);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-2-ul-2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 7px;
+    gap: 5px;
+}
+
+.card-2-text-5 {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(126, 126, 131, 1);
+}
+
+.card-2-text-6 {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(195, 195, 202, 1);
+    margin-top: 10px;
+}
+
+.card-2-text-7 {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 7px;
+}
+
+.card-2-like {
+    position: absolute;
+    top: 13px;
+    left: -3px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-2-like span {
+    width:48px;
+    height:28px;
+    border-radius: 4px;
+    background: rgba(255, 0, 0, 1);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+    padding: 5.5px 8.5px;
+}
+
+.like-icon {
+    background-color: white;
+    color: red;
+    color: rgb(0, 0, 0);
+    border-radius: 50%;
+    padding: 2px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1.2);
+}
+.like-icon:active {
+    transform: scale(1);
+}
+
+.add-basket-btn {
+    border: none;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    position: absolute;
+    top: 371px;
+    left:50%;
+    transform: translate(-50%,0%);
+    z-index: 2;
+    border: 2px solid rgb(223, 223, 223);
+    color: rgb(223, 223, 223);
+    transition: .3s;
+    width: 50px;
+}
+
+.add-basket-btn:hover {
+    color: black;
+    border: 2px solid rgb(0, 0, 0);
+    width: 260px;
+}
+
+.add-basket-btn:active {
+    color: black;
+    border: 2px solid rgb(255, 255, 255);
+    width: 260px;
+    background-color: rgb(230, 230, 230);
+    transition: 0s;
+    color: white;
+}
+
+.add-basket-btn-dark{
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    position: absolute;
+    top: 371px;
+    left:50%;
+    transform: translate(-50%,0%);
+    z-index: 2;
+    border: 2px solid rgb(255, 173, 66);
+    color: rgb(255, 153, 16, 1);
+    transition: .3s;
+    width: 50px;
+}
+
+.add-basket-btn-dark:hover {
+    color: white;
+    border: 2px solid rgba(255, 153, 16, 1);
+    background-color: rgba(255, 153, 16, 1);
+    width: 260px;
+}
+
+.add-basket-btn-dark:active {
+    border: 2px solid rgba(255, 153, 16, 1);
+    width: 260px;
+    background-color: #1a2b3c;
+    transition: 0s;
+    color: rgba(255, 153, 16, 1);
+}

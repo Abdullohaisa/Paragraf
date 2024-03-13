@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.register {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../../assets/register-back.svg');
+    background-size: cover; 
+    background-position: 0%;
+    font-family: inter;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.register-box {
+    width: 444px;
+    min-height: 358px;
+    padding: 56px 32px 32px 32px;
+    border-radius: 12px;
+    position: relative;
+    background-color: white;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.register-close {
+    position: absolute;
+    top: 35px;
+    right:39px;
+    background-color: transparent;
+    width: 18px;
+    height: 18px;
+    border: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 50%;
+    transition: .2s;
+}
+
+.register-close:hover {
+    background-color: red;
+    color: white;
+}
+
+.register-close:active {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.register-confirm-btn {
+    width: 380px;
+    height: 56px;
+    padding: 10px; 
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: rgba(128, 130, 132, 1);
+    transition: .2s;
+}
+
+.register-confirm-btn:hover {
+    background: rgba(255, 153, 16, 1);
+    color: white;
+
+}
+
+.register-confirm-btn:active {
+    color: rgba(128, 130, 132, 1);
+    background-color: rgb(236, 236, 236);
+
+}
+
+.enter-side {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+.enter-side p {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    text-align: center;
+    margin-bottom: 17px;
+}
+
+.enter-side h4 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(102, 104, 108, 1);
+
+}
+
+.enter-side label {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    text-align: left;
+}
+
+.register-input {
+    width: 380px;
+    height: 42px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 8px;
+    border: 1px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    outline-color: rgba(255, 153, 16, 1);
+    border: 1px solid  rgb(230, 230, 230) ;
+    margin-top: 10px;
+}
+
+.register-form {
+   display: flex;
+   gap: 32px;
+   flex-direction: column;
+   margin-top: 32px;
+}
+
+.register-form div  label {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
