@@ -308,6 +308,13 @@
     }
 
   @media only screen and (max-width: 600px) {
+
+    .navbar {
+        position: sticky;
+        top: 0px;
+        z-index: 10;
+        top: 0px;
+    }
    
      .res-top-navbar-btn {
         display: block;

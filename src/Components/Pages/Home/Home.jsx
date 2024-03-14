@@ -11,6 +11,7 @@ import Footer from "../../UI/Footer";
 import { useSelector } from "react-redux";
 import Skeleton from "@mui/material/Skeleton";
 import { useNavigate } from "react-router-dom";
+import CaruselCard1 from "../../UI/Product/carusel.card/carusel.card";
 
 
 export const api = "https://dummyjson.com/products";
@@ -185,14 +186,16 @@ const Home = () => {
                 />
               </div>
             ) : (
-              product.slice(0, 6).map((product, i) => (
-                <CardOne
-                  key={i}
-                  img={product.thumbnail}
-                  title={product.title}
-                  onClick={() => singleProduct(product.id)}
-                />
-              ))
+              // <CaruselCard1>
+                product.slice(0, 6).map((product, i) => (
+                  <CardOne
+                    key={i}
+                    img={product.thumbnail}
+                    title={product.title}
+                    onClick={() => singleProduct(product.id)}
+                  />
+                ))
+              // </CaruselCard1>
             )}
           </div>
         </div>

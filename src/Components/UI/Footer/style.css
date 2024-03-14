@@ -9,6 +9,14 @@ footer {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .footer-p {
@@ -74,4 +82,28 @@ footer {
 .bottom-footer ul {
     display: flex;
     justify-content: space-between;
+}
+
+
+
+
+@media only screen and (max-width: 700px) {
+    .footer {
+     flex-direction: column;
+     align-items: center;
+        
+    }
+
+    .footer ul {
+      align-items: center;
+    }
+
+    .bottom-footer ul {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+   
 }

@@ -7,15 +7,8 @@
     height: 336px;
     border-radius: 19px;
     position: relative;
+    background-color: transparent;
   }
-  
-  /* .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: space-between;
-  } */
 
   #carusel {
     text-align: center;
@@ -23,7 +16,17 @@
     background: #fff;
     display: flex;
     justify-content: space-between;
+    border-radius: 19px;
   }
+
+ .carusel-box {
+     width: 100%;
+     background-image: url('../../../../assets/carusel-img.svg');
+     background-repeat: no-repeat;
+     background-position: 90%;
+     background-size: 50%;
+     padding: 0px;
+ }
 
   #carusel-dark {
     text-align: center;
@@ -32,7 +35,9 @@
     display: flex;
     justify-content: space-between;
     color: white;
+    border-radius: 19px;
   }
+
   
   .swiper-slide img {
     display: block;
@@ -44,8 +49,9 @@
   .button-next-slide { 
    width: 100px;
    height: 100px;
-   background: red;
+
    position: absolute;
+   top: -10px;
   }
 
   .swiper-slide div {
@@ -54,6 +60,7 @@
     align-items: flex-start;
     flex-direction: column;
     justify-content: flex-start;
+    z-index: 10;
   } 
 
   .swiper-slide p {
@@ -85,14 +92,69 @@
     line-height: 19px;
     letter-spacing: 0em;
     text-align: center;
-    width: 174px;
-    height: 48px;
-    top: 248px;
-    left: 72px;
+    /* width: 174px;
+    height: 48px; */
+    padding: 14px 8px;
+    /* top: 248px;
+    left: 72px; */
     border-radius: 12px;
     gap: 10px;
     background: rgba(255, 153, 16, 1);
     border: none;
     color: white;
     margin-top: 42px;
+    transition: .3s;
+  }
+
+  .carusel-box p {
+    width: 400px;
+    /* backdrop-filter: blur(5px);
+    background-color: #ffffff26; */
+  }
+
+
+  @media only screen and (max-width: 800px) {
+    .carusel-box p {
+      font-size: 36vw;
+      font-weight: 700;
+    }
+
+    .carusel-box {
+      width: 100%;
+      background-image: url('../../../../assets/carusel-img.svg');
+      background-repeat: no-repeat;
+      background-position: 100%;
+      background-position: 100% bottom;
+  }
+
+    .swiper-slide div  {
+      padding: 28px 0px 0px 52px;
+  }
+  }
+
+
+  @media only screen and (max-width: 500px) {
+
+    .carusel-box p {
+      font-size: 120%;
+      font-weight: 700;
+    }
+
+    .carusel-box {
+      background-image: url('../../../../assets/carusel-img.svg');
+      background-repeat: no-repeat;
+      background-position: 150% bottom;
+      background-size: 70%;
+  }
+
+    .swiper-slide div  {
+      padding: 18px 0px 30px 22px;
+  }
+
+  .swiper-slide button  {
+    padding: 10px 5px;
+    margin-top: 10px;
+  }
+
+  
   }
