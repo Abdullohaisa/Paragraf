@@ -20,7 +20,8 @@ ul, li {
 #dark{
   background-color: #1a2b3c;
   color: white;
-  transition: .5s;
+  transition: .3s;
+  text-decoration: none;
 }
 
 #dark::placeholder {
@@ -30,7 +31,8 @@ ul, li {
 #light {
   background-color: white;
   color: #000;
-  transition: .5s;
+  transition: .3s;
+  text-decoration: none;
 }
 
 .dark-btn{

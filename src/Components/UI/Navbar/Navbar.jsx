@@ -16,6 +16,7 @@ import CircularProgress from '@mui/material/CircularProgress';
 import { darkLight } from "../../../Redux/darkModeSlice";
 import MenuIcon from '@mui/icons-material/Menu';
 import PersonIcon from '@mui/icons-material/Person';
+import SideBar from "../SideBar";
 
 
 
@@ -28,6 +29,7 @@ const Navbar = ({searchModalPanel,  setBackPanel,closeCategory,   setSearchModal
   const [searchValue, setSearchValue] = useState("");
   const [searchData, setSearchData] = useState([]);
   const [loading, setLoading] = useState(false)
+  const [sideBarOpen, setSideBarOpen] = useState(false)
   const navigate = useNavigate()
  
 
@@ -80,12 +82,18 @@ const Navbar = ({searchModalPanel,  setBackPanel,closeCategory,   setSearchModal
     setSearchValue('')
   }
 
+  const barOpen = () => {
+    setSideBarOpen(prev => !prev)
+  }
+
   
 
 
 
   return (
     <div className="navbar">
+
+       <SideBar close={barOpen} open={sideBarOpen}/>
 
        <div id={mode === false ? "dark":"light"} className="top-navbar">
          <div className="container">
@@ -112,9 +120,6 @@ const Navbar = ({searchModalPanel,  setBackPanel,closeCategory,   setSearchModal
           </div>
        </div>
 
-        
-
-
          <div id={mode === false ? "dark":"light"} className="main-outside-navbar">
       <div className="container">
           <div className="main-navbar">
@@ -124,7 +129,7 @@ const Navbar = ({searchModalPanel,  setBackPanel,closeCategory,   setSearchModal
               <button onClick={() => openCategory()} className="category-btn">Kategorya</button>
             </li>
             <li>
-            <button className="res-top-navbar-btn">
+            <button onClick={() => barOpen()} className="res-top-navbar-btn">
              <MenuIcon/>
            </button>
             </li>
@@ -192,6 +197,8 @@ const Navbar = ({searchModalPanel,  setBackPanel,closeCategory,   setSearchModal
         </div>
 
       </div>
+
+     
 
     </div>
   );

@@ -31,9 +31,9 @@ export default function Caursel() {
           Thumbs,
           Keyboard,
         ]}
-        autoplay={{ delay: 3000 }}
+        autoplay={{ delay: 0 }}
         keyboard={true}
-        speed={2000}
+        speed={4000}
         loop={true}
         spaceBetween={30}
         navigation={{
